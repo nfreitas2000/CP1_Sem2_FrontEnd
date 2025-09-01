@@ -7,7 +7,6 @@
     justify-items: center;
 }
 
-
 .bloco2{
     height: 50vh;
     width: 40vw;
@@ -53,7 +52,7 @@
     text-align: left;
 }
 
-button {
+.botao-produtos {
     padding: 20px;
     width: 15vw;
     margin: 5vh;

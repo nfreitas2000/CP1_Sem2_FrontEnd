@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export default function Home(){
     return(
     <main>
-        <h1 className="h1">Home</h1>
+        <h1 className={"h1"}>Home</h1>
             <div className="corpo-principal">
                 <div className="item bloco1">
                     <h3>Bem-vindo à nossa loja de eletrônicos! <br /></h3>
@@ -53,7 +53,7 @@ export default function Home(){
                     </p>
                 </div>
             </div>
-            <Link to={"/aparelhos"}><button>Nossos produtos!!!</button></Link>
+            <Link to={"/aparelhos"}><button className="botao-produtos">Nossos produtos!!!</button></Link>
         </main>
     )
 

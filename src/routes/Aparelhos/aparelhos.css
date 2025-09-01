@@ -1,0 +1,29 @@
+
+
+.aparelhos{
+    border: 2px blue solid;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 20px;
+  background: linear-gradient( to top left, rgb(141, 141, 141), rgb(202, 202, 202));
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px 1px black;
+  font-size: 1.4em;
+}
+
+.img-aparelho{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.bloco-aparelhos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Separa os produtos em colunas */
+  gap: 20px; /* O espaço entre os produtos com o grid */
+}
