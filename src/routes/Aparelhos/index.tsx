@@ -18,7 +18,7 @@ export default function Aparelhos(){
                     <Link to={`/aparelhos/visualizar/${aparelhos.id}`}>
                         <div className="aparelhos" key={aparelhos.id}>
                             <img src={aparelhos.imagem} alt="" style={format_img}/> <br />
-                            {aparelhos.nome} R${aparelhos.preco}
+                            {aparelhos.nome} <br /> R${aparelhos.preco}
                         </div>
                     </Link>
                 ))

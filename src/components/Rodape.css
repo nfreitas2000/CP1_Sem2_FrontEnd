@@ -1,0 +1,11 @@
+footer {
+  display: fixed;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(41, 41, 45);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 8vh;
+}

@@ -1,24 +1,9 @@
- #root {
+#root {
 
   margin: 0 auto;
   padding: 0;
   text-align: center;
   width: 100%;
-}
-  
-
-header{
-  display:flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(44, 44, 44);
-
-  & a{
-    color: white;
-    font-size: 1.5em;
-    padding: 15px;
-  }
 }
 
 main {
@@ -29,18 +14,7 @@ main {
   align-items: center;
   width: 100%;
   min-height: 100vh;  /* Garante que as imagens não quebrem no Rodapé*/
-
 }
-
-footer {
-  display: fixed;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(41, 41, 45);
-  color: white;
-}
-
-
 
 /* PÁGINA APARELHOS --------------------------------------------- */
 
@@ -72,6 +46,5 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Separa os produtos em colunas */
   gap: 20px; /* O espaço entre os produtos com o grid */
-
 }
 

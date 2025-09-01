@@ -1,0 +1,60 @@
+.corpo-principal{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.bloco2{
+    height: 50vh;
+    width: 40vw;
+    background-color: black;
+    border-radius: 25px;
+    color: white;
+}
+
+.img-iphone{
+    width: 25vw;
+    height: 25vh;
+}
+
+.bloco4{
+    height: 50vh;
+    width: 40vw;
+    background-color: #212121;
+    border-radius: 25px;
+    color: rgb(233, 233, 233);
+}
+.bloco4 h2{
+    padding: 20px;
+}
+
+.bloco2 h2{
+    padding: 20px;
+}
+
+.img-tablet{
+    width: 15vw;
+    height: 25vh;
+}
+
+.bloco3{
+    font-size: large;
+    width: 40vw;
+    text-align: left;
+}
+
+.bloco1{
+    font-size: large;
+    max-width: 40vw;
+    text-align: left;
+}
+
+button {
+    padding: 20px;
+    width: 15vw;
+    margin: 5vh;
+}
