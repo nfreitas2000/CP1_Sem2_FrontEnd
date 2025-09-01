@@ -15,7 +15,7 @@ export default function VisualizarAparelho() {
   return (
     <main className="visualizarAparelho">
 
-        <img className='banner' src={aparelho.imagem} alt={`${aparelho.marca} ${aparelho.modelo}`} />
+        <img className='img-aparelho' src={aparelho.imagem} alt={`${aparelho.marca} ${aparelho.modelo}`} />
 
           <h1>{aparelho.marca} {aparelho.modelo}</h1>
           <p>{aparelho.descricao}</p>

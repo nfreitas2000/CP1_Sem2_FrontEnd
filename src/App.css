@@ -28,7 +28,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;  /* Garante que as imagens não quebrem no Rodapé*/
 
 }
 
@@ -58,19 +58,9 @@ footer {
   font-size: 1.4em;
 }
 
-.img {
-  width: 100%;          /* pega toda a largura da coluna */
-  max-width: 400px;     
-  height: 400px;        
-  object-fit: contain;  /* mantém proporção */
-  display: block;
-  margin: 0 auto;       /* centraliza */
-  background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-}
 
-.banner{
+
+.img-aparelho{
     width: 100%;
     height: 300px;
     object-fit: contain;
@@ -78,9 +68,10 @@ footer {
     
 }
 
-.bloco-aparelhos{
-  margin: 20px;
-  display: flex;
-  flex-direction: row;
-  border: blue solid 20px;
+.bloco-aparelhos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Separa os produtos em colunas */
+  gap: 20px; /* O espaço entre os produtos com o grid */
+
 }
+
