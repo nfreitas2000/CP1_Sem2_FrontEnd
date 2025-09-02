@@ -28,11 +28,11 @@ export default function Home(){
                         <h4>De R$12.999 por R$9.999 </h4>
                     </div>
                 </Link>
-                <Link to={"/aparelhos/visualizar/4"}>
+                <Link to={"/aparelhos/visualizar/6"}>
                     <div className="item bloco4">
                         <h2>iPad Pro M4</h2>
                         <img src={tablet_promo} alt="" className="img-tablet" />
-                        <h3>Toda a tecnologia que você precisa, na palma da sua mão!</h3>
+                        <h3>A tecnologia que transforma sua rotina em qualquer lugar!</h3>
                         <h4>De R$15.999 por R$12.999</h4>
                     </div>
                 </Link>

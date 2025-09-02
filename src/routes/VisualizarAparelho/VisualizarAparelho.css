@@ -1,0 +1,38 @@
+.visualizarAparelho {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr) ;
+}
+
+.img-aparelho{
+    align-self: center;
+    justify-self: center;
+    grid-column: 2 / 3;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.nome {
+    grid-column: 2 / 4;
+}
+
+.descr{
+    align-self: top;
+    justify-self: top;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    font-size: large;
+    text-align: left;
+}
+
+.comprar {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+}
+
+.comprar-botao {
+    width: 10vw;
+    height: 5vh;
+    margin: 2vh;
+}
+

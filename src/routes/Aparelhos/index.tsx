@@ -8,20 +8,41 @@ export default function Aparelhos(){
         width: "200px",
         height: "auto",
     }
+
+    const smartphones = listaAparelhos.filter(item => item.tipo === "Smartphone");
+    const tablets = listaAparelhos.filter(item => item.tipo === "Tablet");
+
     
     return(
         <main>
-            <h1>Aparelhos</h1>
-            <p>Confira nossos produtos!</p>
+            <div className="frases">
+                <h1>Nossos Produtos</h1>
+                <p>Confira abaixo nossa seleção de smartphones e tablets. Reunimos os modelos mais buscados do mercado, com diferentes configurações para atender às suas necessidades — seja para trabalho, estudo ou lazer.</p>
+                <p>Explore cada opção, compare recursos e escolha o aparelho ideal para o seu dia a dia. Todos os produtos contam com qualidade garantida e preços competitivos, além de opções exclusivas que você só encontra aqui.</p>
+                <p>Seu próximo dispositivo está logo abaixo. Aproveite e encontre já o seu!</p>
+            </div>
+            
             <h2>Smartphones</h2>
+            <div className="bloco-smartphones">
+                {smartphones.map((celulares) =>(
+                    <Link to={`/aparelhos/visualizar/${celulares.id}`}>
+                        <div className="smartphones" key={celulares.id}>
+                            <img src={celulares.imagem} style={format_img} /> <br />
+                            {celulares.nome} <br /> R${celulares.preco}
+                        </div>
+                    </Link>
+                ))}
+                
+
+            </div>
             <h2>Tablets</h2>
-            <div className="bloco-aparelhos">
+            <div className="bloco-tablets">
                 {
-                listaAparelhos.map((aparelhos)=>(
-                    <Link to={`/aparelhos/visualizar/${aparelhos.id}`}>
-                        <div className="aparelhos" key={aparelhos.id}>
-                            <img src={aparelhos.imagem} style={format_img}/> <br />
-                            {aparelhos.nome} <br /> R${aparelhos.preco}
+                tablets.map((tablet)=>(
+                    <Link to={`/aparelhos/visualizar/${tablet.id}`}>
+                        <div className="tablets" key={tablet.id}>
+                            <img src={tablet.imagem} style={format_img}/> <br />
+                            {tablet.nome} <br /> R${tablet.preco}
                         </div>
                     </Link>
                 ))
