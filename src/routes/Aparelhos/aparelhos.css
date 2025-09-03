@@ -18,8 +18,10 @@
 .tablets{
   margin: 20px;
   display: flex;
-  height: 35vh;
-  width: 12vw;
+  min-height: 80%;
+  min-width: 25%;
+  max-height: 100%;
+  max-width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -28,6 +30,11 @@
   border-radius: 20px;
   box-shadow: 1px 1px 1px 1px rgba(172, 172, 172, 0.534);
   font-size: 1.4em;
+}
+
+.tablets p {
+  max-width: 80%;
+  max-height: 25%;
 }
 
 .img-aparelho{
@@ -50,3 +57,6 @@
   margin-bottom: 3vh;
 }
 
+.img-tablets, .img-smartphones{
+  max-width: 75%
+}

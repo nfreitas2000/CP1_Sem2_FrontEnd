@@ -4,11 +4,6 @@ import "./aparelhos.css"
 
 export default function Aparelhos(){
     
-    let format_img={
-        width: "200px",
-        height: "auto",
-    }
-
     const smartphones = listaAparelhos.filter(item => item.tipo === "Smartphone");
     const tablets = listaAparelhos.filter(item => item.tipo === "Tablet");
 
@@ -27,7 +22,7 @@ export default function Aparelhos(){
                 {smartphones.map((celulares) =>(
                     <Link to={`/aparelhos/visualizar/${celulares.id}`}>
                         <div className="smartphones" key={celulares.id}>
-                            <img src={celulares.imagem} style={format_img} /> <br />
+                            <img src={celulares.imagem} className="img-smartphones" /> <br />
                             {celulares.nome} <br /> R${celulares.preco}
                         </div>
                     </Link>
@@ -41,8 +36,8 @@ export default function Aparelhos(){
                 tablets.map((tablet)=>(
                     <Link to={`/aparelhos/visualizar/${tablet.id}`}>
                         <div className="tablets" key={tablet.id}>
-                            <img src={tablet.imagem} style={format_img}/> <br />
-                            {tablet.nome} <br /> R${tablet.preco}
+                            <img src={tablet.imagem} className="img-tablets"/> <br />
+                            <p>{tablet.nome} <br /> R${tablet.preco}</p>
                         </div>
                     </Link>
                 ))
