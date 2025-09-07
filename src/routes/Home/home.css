@@ -8,7 +8,7 @@
 }
 
 .bloco2{
-    height: 50vh;
+    min-height: 50vh;
     width: 40vw;
     background-color: black;
     border-radius: 25px;
@@ -21,7 +21,7 @@
 }
 
 .bloco4{
-    height: 50vh;
+    min-height: 50vh;
     width: 40vw;
     background-color: #212121;
     border-radius: 25px;
