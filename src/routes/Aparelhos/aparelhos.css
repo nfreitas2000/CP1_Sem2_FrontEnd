@@ -60,3 +60,9 @@
 .img-tablets, .img-smartphones{
   max-width: 75%
 }
+
+.frases{
+  margin: 20px;
+  font-size: 1.2em;
+  width: 60vw;
+}
