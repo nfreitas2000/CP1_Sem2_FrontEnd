@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export default function Home(){
     return(
     <main>
-        <h1 className={"h1"}>Home</h1>
+        <h1 className={"h1"}> NICOLAS MOTA RM - 561857 / NATHAN FREITAS RM - 564992</h1>
             <div className="corpo-principal">
                 <div className="item bloco1">
                     <h3>Bem-vindo à nossa loja de eletrônicos! <br /></h3>
