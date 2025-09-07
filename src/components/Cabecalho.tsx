@@ -5,7 +5,8 @@ export default function Cabecalho(){
     return(
         <>
             <header>
-                <h1 className="item nome-loja">N&N ELECTRONICS</h1>
+
+               <Link to={"/"}><h1 className="item nome-loja">N&N ELECTRONICS</h1></Link>
                 <input type="text" className="item barra-pesquisa" placeholder="Buscar Produtos..."/>
             </header>
             <nav>

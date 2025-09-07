@@ -47,3 +47,7 @@ header{
     grid-gap: 50px;
 }
 
+.item.nome-loja{
+    text-decoration: none;
+    color: white;
+}
